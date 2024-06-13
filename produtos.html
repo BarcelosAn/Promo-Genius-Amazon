@@ -1,0 +1,191 @@
+
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                gap: 20px;
+                padding: 20px;
+                margin: 0;
+            }
+            .product-card {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                width: 320px;
+                height: 720px;
+                padding: 5px 20px;
+                text-align: center;
+                transition: transform 0.3s;
+            }
+            .product-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+            }
+            .product-card h1 {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 22px;
+                color: #333;
+                margin-bottom: 20px;
+            }
+            .product-card img {
+                width: 100%;
+                border-radius: 8px;
+                margin-bottom: 5px;
+            }
+            .price {
+                margin-bottom: 20px;
+            }
+            .current-price {
+                font-size: 26px;
+                font-weight: 650;
+                color: #1eaf10;
+                display: block;
+            }
+            .original-price {
+                font-size: 18px;
+                color: #777;
+                text-decoration: line-through;
+                display: block;
+            }
+            .discount {
+                margin-top: 5px;
+                font-size: 16px;
+                color: #3c60ff;
+                font-weight: 500;
+                display: block;
+            }
+            .features {
+                text-align: left;
+                padding-left: 0;
+                list-style: none;
+                margin-bottom: 20px;
+            }
+            .features li {    
+                display: -webkit-box;
+                -webkit-line-clamp: 2; /* Número de linhas */
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 15px;
+                margin-bottom: 10px;
+                position: relative;
+            }
+            .features li::before {
+                content: '🌐';
+                padding-right: 5px;
+                left: 0;
+                color: #007bff;
+                font-size: 15px;
+                line-height: 15px;
+            }
+            .buy-button {
+                display: inline-block;
+                background-color: #007bff;
+                color: white;
+                padding: 12px 80px;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+            .buy-button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="product-card">
+            <h1>Caixa De Som Bluetooth Essential Sound Go i2GO 10W RMS Resistente à Água, Preto</h1>
+            <a href="https://www.amazon.com.br/dp/B085YDLGFR?tag=paulocarval02-20&linkCode=osi&th=1&psc=1" target="_blank">
+                <img src="https://m.media-amazon.com/images/I/51BqOD7THKL._SL500_.jpg" alt="Caixa De Som Bluetooth Essential Sound Go i2GO 10W RMS Resistente à Água, Preto">
+            </a>
+            <div class="price">
+                <span class="current-price">R$ 140.60</span>
+                <span class="original-price">R$ 149.92</span>
+                <span class="discount">Desconto: R$ 9.32 (6%)</span>
+            </div>
+            <ul class="features">
+                <li>A Caixa de Som Bluetooth Essential Sound Go i2GO possui 10W de potência RMS e Bateria de até 8h</li><li>Conexão Bluetooth 5.0, Entrada para Cartão Micro-SD, Entrada para Cabo Auxiliar 3,5mm e Entrada USB para Pen Drive</li><li>Vale destacar que a Caixa de Som Bluetooth Essential Sound Go 10W é resistente à água (IPX4 - Não Mergulhar!) e é perfeita para lhe acompanhar na piscina e na praia com os amigos.</li>
+            </ul>
+            <a href="https://www.amazon.com.br/dp/B085YDLGFR?tag=paulocarval02-20&linkCode=osi&th=1&psc=1" class="buy-button" target="_blank">Comprar Agora</a>
+        </div>
+        
+        <div class="product-card">
+            <h1>Caixa de som bluetooth caixinha som potatil potente com excelentes graves fm usb sd selo anatel (PRETO) …</h1>
+            <a href="https://www.amazon.com.br/dp/B09VJR4326?tag=paulocarval02-20&linkCode=osi&th=1&psc=1" target="_blank">
+                <img src="https://m.media-amazon.com/images/I/41eWM7j9syL._SL500_.jpg" alt="Caixa de som bluetooth caixinha som potatil potente com excelentes graves fm usb sd selo anatel (PRETO) …">
+            </a>
+            <div class="price">
+                <span class="current-price">R$ 39.90</span>
+                <span class="original-price">R$ 54.72</span>
+                <span class="discount">Desconto: R$ 14.82 (27%)</span>
+            </div>
+            <ul class="features">
+                <li>Caixa caxinha de som bluetooth Exbom com selo da Anatel /</li><li>São 5w Reais , uma das mais potentes da categoria/</li><li>Portatil e leve, Pode desloca-la facilemnte pra onde quiser/</li>
+            </ul>
+            <a href="https://www.amazon.com.br/dp/B09VJR4326?tag=paulocarval02-20&linkCode=osi&th=1&psc=1" class="buy-button" target="_blank">Comprar Agora</a>
+        </div>
+        
+        <div class="product-card">
+            <h1>JBL, Caixa de Som Bluetooth, Go 3, Ultraportátil - Preta</h1>
+            <a href="https://www.amazon.com.br/dp/B08FB2H6Y4?tag=paulocarval02-20&linkCode=osi&th=1&psc=1" target="_blank">
+                <img src="https://m.media-amazon.com/images/I/31L2TB4sMRL._SL500_.jpg" alt="JBL, Caixa de Som Bluetooth, Go 3, Ultraportátil - Preta">
+            </a>
+            <div class="price">
+                <span class="current-price">R$ 245.00</span>
+                <span class="original-price">R$ 299.00</span>
+                <span class="discount">Desconto: R$ 54.0 (18%)</span>
+            </div>
+            <ul class="features">
+                <li>CAIXA DE SOM ULTRAPORTÁTIL. Com estilo ousado e incrível, a caixa de som Go 3 oferece um áudio surpreendentemente potente e baixos intensos para você levar onde quiser.</li><li>À PROVA D'ÁGUA E POEIRA. Com classificação IP67, leve a sua Go 3 para a praia ou piscina, para academia ou parque, e divirta-se com sua trilha sonora preferida.</li><li>ATÉ 5 HORAS DE REPRODUÇÃO. Não se preocupe com pequenos detalhes, como carregar a bateria. A Go 3 oferece 5 horas de reprodução com uma única recarga.</li>
+            </ul>
+            <a href="https://www.amazon.com.br/dp/B08FB2H6Y4?tag=paulocarval02-20&linkCode=osi&th=1&psc=1" class="buy-button" target="_blank">Comprar Agora</a>
+        </div>
+        
+        <div class="product-card">
+            <h1>Caixa Amplificada Connect Lights, Mondial, Preto/Vermelho, 400W RMS, Bivolt - CM-400</h1>
+            <a href="https://www.amazon.com.br/dp/B0914XZ2LL?tag=paulocarval02-20&linkCode=osi&th=1&psc=1" target="_blank">
+                <img src="https://m.media-amazon.com/images/I/41ViBuPDQHL._SL500_.jpg" alt="Caixa Amplificada Connect Lights, Mondial, Preto/Vermelho, 400W RMS, Bivolt - CM-400">
+            </a>
+            <div class="price">
+                <span class="current-price">R$ 445.40</span>
+                <span class="original-price">R$ 789.90</span>
+                <span class="discount">Desconto: R$ 344.5 (44%)</span>
+            </div>
+            <ul class="features">
+                <li>POTÊNCIA 400W RMS: Som potente, com alta qualidade e performance.</li><li>TRANSMISSÃO VIA BLUETOOTH: Você conecta o celular ou serviço de streaming de música via Bluetooth, sem precisar de cabo.</li><li>BATERIA RECARREGÁVEL E BIVOLT</li>
+            </ul>
+            <a href="https://www.amazon.com.br/dp/B0914XZ2LL?tag=paulocarval02-20&linkCode=osi&th=1&psc=1" class="buy-button" target="_blank">Comprar Agora</a>
+        </div>
+        
+        <div class="product-card">
+            <h1>JBL, Caixa de Som, Bluetooth, Go - Preta</h1>
+            <a href="https://www.amazon.com.br/dp/B09NCFVNK9?tag=paulocarval02-20&linkCode=osi&th=1&psc=1" target="_blank">
+                <img src="https://m.media-amazon.com/images/I/41WC07gIxCL._SL500_.jpg" alt="JBL, Caixa de Som, Bluetooth, Go - Preta">
+            </a>
+            <div class="price">
+                <span class="current-price">R$ 199.00</span>
+                <span class="original-price"></span>
+                <span class="discount"></span>
+            </div>
+            <ul class="features">
+                <li>SOM INCONFUNDÍVEL. A qualidade de som profissional da JBL oferece um áudio surpreendentemente potente e graves intensos no tamanho ultracompacto da Go Essential.</li><li>À PROVA D'ÁGUA. A qualidade de som profissional da JBL oferece um áudio surpreendentemente potente e graves intensos no tamanho ultracompacto da Go Essential.</li><li>TRANSMISSÃO BLUETOOTH. Reproduza suas músicas sem fios de seu smartphone, tablet ou qualquer dispositivo compatível com Bluetooth.</li>
+            </ul>
+            <a href="https://www.amazon.com.br/dp/B09NCFVNK9?tag=paulocarval02-20&linkCode=osi&th=1&psc=1" class="buy-button" target="_blank">Comprar Agora</a>
+        </div>
+        
+    </body>
+    </html>
+    
