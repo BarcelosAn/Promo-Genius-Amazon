@@ -7,18 +7,19 @@ from paapi5_python_sdk.rest import ApiException
 import json
 import pandas as pd
 from genius import generate_html_response
+import streamlit as st
 
 def search_items(busca):
 
     """ Following are your credentials """
     """ Please add your access key here """
-    access_key = "AKIAJQBLV347HAKEW2LQ"
+    access_key = st.secrets["accesskey"]
 
     """ Please add your secret key here """
-    secret_key = "ejWb7X9LmKt4UfEZsI3MkWCq0hiVR37IpBy9V64M"
+    secret_key = st.secrets["secretkey"]
 
     """ Please add your partner tag (store/tracking id) here """
-    partner_tag = "paulocarval02-20"
+    partner_tag = st.secrets["partnertag"]
 
     """ PAAPI host and region to which you want to send request """
     """ For more details refer: https://webservices.amazon.com/paapi5/documentation/common-request-parameters.html#host-and-region"""
