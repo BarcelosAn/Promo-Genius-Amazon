@@ -155,7 +155,8 @@ def generate_html_from_json(data):
     }
 
     .product img {
-        max-width: 80%;
+        max-height: 300px;
+        max-width: 300px;
         height: auto;
         border-radius: 8px;
     }
