@@ -72,7 +72,8 @@ def produto():
                 margin-bottom: 20px;
             }
             .product-card img {
-                width: 100%;
+                max-height: 300px;
+                max-width: 300px;
                 border-radius: 8px;
                 margin-bottom: 5px;
             }
