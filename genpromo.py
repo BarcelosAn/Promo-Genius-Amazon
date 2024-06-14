@@ -3,6 +3,7 @@ import json
 import streamlit as st
 import streamlit.components.v1 as components
 import os
+from genius import generate_html_response
 
 st.set_page_config(layout="wide",page_title="Promo Genius",page_icon="🛍")
 
@@ -193,9 +194,12 @@ if st.button("Buscar"):
         # EFEITO DE LOADING - Enquanto busca o resultado da IA
         with st.spinner("🤖 Buscando promoções..."):
             produto()
+            resposta = generate_html_response(perg)
             with open('produtos.html', 'r', encoding='utf-8') as file:
                 # Leia o conteúdo do arquivo
                 html_content = file.read()
+            with st.chat_message("assistant"):
+                st.write(f'Buscando por {resposta}')
             components.html(html_content, height=1800, scrolling=True)
 
             # ARMAZENA - o historico de busca
