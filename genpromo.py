@@ -158,6 +158,7 @@ def produto():
         if produto['item_info']['features']:
             cat_produto = produto['item_info']['features']['display_values']
             cat_produto_html = "".join([f"<li>{cat}</li>" for cat in cat_produto[:3]])
+        else: cat_produto_html="⛔ Sem descrição"
 
         html_content += f"""
         <div class="product-card">
