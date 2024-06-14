@@ -200,7 +200,7 @@ if st.button("Buscar"):
                 html_content = file.read()
             with st.chat_message("assistant"):
                 st.write('Buscando por:')
-                st.markdown(f'###{resposta}')
+                st.markdown(f'### {resposta}')
             components.html(html_content, height=1800, scrolling=True)
 
             # ARMAZENA - o historico de busca
